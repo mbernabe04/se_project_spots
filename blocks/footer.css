@@ -1,0 +1,9 @@
+.footer {
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+}
+.footer__copyright {
+  width: 96px;
+  height: 26px;
+}

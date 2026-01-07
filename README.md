@@ -1,21 +1,23 @@
-# Project 3: Spots
+# Project 3: Spots Adapative Web Design
 
-### Overview  
+Spots Project from TripleTen's Sprint 3 where I built a social media web app that integrates responsive web design and intermediate HTML/CSS. It is visible on desktop and tablet/mobile view!
 
-* Intro  
-* Figma  
-* Images  
-  
-**Intro**
-  
-This project is made so all the elements are displayed correctly on popular screen sizes. We recommend investing more time in completing this project, since it's more difficult than previous ones.  
-  
-**Figma**  
-  
-* [Link to the project on Figma](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
-  
-**Images**  
-  
-The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster. 
-  
-Good luck and have fun!
+## Technologies Used
+
+- Responsive Web Design
+- Intermediate HTML & CSS
+- Figma Design
+- Grid Layouts
+- Text overflow
+- Media Queries
+
+**Figma**
+
+- [Link to the project on Figma](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
+
+**Images**
+
+![Figma Design - Desktop View](se_project_spots/images/figmadesigndesktopview.png)
+![Figma Design - Mobile View](se_project_spots/images/figmadesignmobileview.png)
+![Text Overflow Example - Desktop View](se_project_spots/images/textoverflowdesktop.png)
+![Text Overflow Example - Mobile View](se_project_spots/images/textoverflowmobile.png)

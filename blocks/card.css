@@ -1,0 +1,69 @@
+.card__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  letter-spacing: 0%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 1280px;
+  margin-top: 12px;
+}
+
+.card__image {
+  height: 413px;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+}
+
+.card__like-btn {
+  background-image: url(../images/heartt.svg);
+  width: 23px;
+  height: 20px;
+  border: none;
+  background-color: transparent;
+  opacity: 40%;
+  cursor: pointer;
+}
+
+.card__section {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.card__title {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 120%;
+}
+
+.card__like-btn:hover {
+  opacity: 100%;
+  transition: background-color 0.3s linear;
+}
+
+@media screen and (max-width: 627px) {
+  .card__image {
+    height: 288px;
+  }
+
+  .card__content {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 288px;
+  }
+
+  .card__title {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 250px;
+  }
+}
