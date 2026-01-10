@@ -11,13 +11,20 @@ Spots Project from TripleTen's Sprint 3 where I built a social media web app tha
 - Text overflow
 - Media Queries
 
-**Figma**
+## Github Pages Webpage Deployment
 
-- [Link to the project on Figma](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
+-[Deployment Link](https://mbernabe04.github.io/se_project_spots/)
 
-**Images**
+## Images/Figma
 
 ![Figma Design - Desktop View](se_project_spots/images/figmadesigndesktopview.png)
 ![Figma Design - Mobile View](se_project_spots/images/figmadesignmobileview.png)
 ![Text Overflow Example - Desktop View](se_project_spots/images/textoverflowdesktop.png)
 ![Text Overflow Example - Mobile View](se_project_spots/images/textoverflowmobile.png)
+
+- [Link to the Figma Design](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
+
+## Project Pitch Video
+
+Check out [this video](https://drive.google.com/file/d/17yAjNmAkgkF9ywDKEfsqEmMb-9nLNCWH/view?usp=sharing), where I briefly describe my
+project and the process of building it!

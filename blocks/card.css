@@ -37,7 +37,7 @@
 .card__title {
   font-weight: normal;
   font-size: 20px;
-  line-height: 120%;
+  line-height: 140%; /*originally was 120%, text was cut off on the bottom with 120%*/
 }
 
 .card__like-btn:hover {
@@ -60,7 +60,7 @@
   .card__title {
     font-weight: normal;
     font-size: 16px;
-    line-height: 100%;
+    line-height: 130%;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
