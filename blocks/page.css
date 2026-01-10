@@ -8,12 +8,3 @@
   max-width: 1280px;
   margin: 0 auto;
 }
-
-h1,
-h2,
-h3,
-p {
-  font-weight: normal; /* removes browser bold defaults */
-  margin: 0; /* removes default margins */
-  line-height: 1.2; /* closer to Figma's tight spacing */
-}

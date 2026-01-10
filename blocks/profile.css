@@ -18,9 +18,11 @@
 
 .profile__name {
   margin: 0 0 12px;
+  color: #212121;
   font-size: 32px;
   line-height: 1;
-  font-weight: normal; /* removes browser bold defaults */
+  font-style: normal;
+  font-weight: 500; /* removes browser bold defaults */
   display: -webkit-box;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -33,7 +35,7 @@
   font-size: 16px;
   color: #212121;
   opacity: 70%;
-  font-weight: normal;
+  font-weight: 500;
   margin: 0;
   line-height: 1;
   margin-top: 6px;
@@ -50,7 +52,6 @@
   margin-right: auto;
   margin-bottom: 12px;
   border: none;
-  outline: none;
   background-color: #fcf5e5;
   color: #212121;
   font-weight: normal;
@@ -59,31 +60,41 @@
   opacity: 70%;
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
   padding: 0;
   cursor: pointer;
+  transition: opacity 0.3s linear;
+}
+
+.profile__edit-btn:focus {
+  outline: 2px solid #000000;
+  outline-offset: 2px;
 }
 
 .profile__edit-btn:hover {
-  transition: background-color 0.3s linear;
   opacity: 100%;
 }
 
 .profile__add-btn {
-  font-weight: normal;
-  font-style: Medium;
+  font-weight: 500;
+  font-style: normal;
   font-size: 16px;
   line-height: 1;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   margin-left: auto;
   margin-top: auto;
   border: none;
-  outline: none;
   color: rgba(252, 245, 229, 1);
   background-color: #000000; /*normal state color */
-  padding: 14px 20px;
+  width: 149px;
+  height: 52px;
   border-radius: 8px;
   cursor: pointer;
+}
+
+.profile__add-btn:focus {
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
 }
 
 .profile__add-btn img {
