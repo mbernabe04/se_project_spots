@@ -17,10 +17,10 @@ Spots Project from TripleTen's Sprint 3 where I built a social media web app tha
 
 ## Images/Figma
 
-![Figma Design - Desktop View](se_project_spots/images/figmadesigndesktopview.png)
-![Figma Design - Mobile View](se_project_spots/images/figmadesignmobileview.png)
-![Text Overflow Example - Desktop View](se_project_spots/images/textoverflowdesktop.png)
-![Text Overflow Example - Mobile View](se_project_spots/images/textoverflowmobile.png)
+![Figma Design - Desktop View](images/figmadesigndesktopview.png)
+![Figma Design - Mobile View](images/figmadesignmobileview.png)
+![Text Overflow Example - Desktop View](images/textoverflowdesktop.png)
+![Text Overflow Example - Mobile View](images/textoverflowmobile.png)
 
 - [Link to the Figma Design](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
 
