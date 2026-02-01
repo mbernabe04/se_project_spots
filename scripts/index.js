@@ -13,6 +13,10 @@ const newPostBtn = document.querySelector(".profile__add-btn");
 const newPostModal = document.querySelector("#new-post-modal");
 const newPostCloseBtn = newPostModal.querySelector(".modal__close-btn");
 
+newPostBtn.addEventListener("click", function () {
+  newPostModal.classList.add("modal_is-opened");
+});
+
 const profileNameEL = document.querySelector(".profile__name");
 const profileDescriptionEL = document.querySelector(".profile__description");
 
@@ -25,11 +29,6 @@ editProfileBtn.addEventListener("click", function () {
 editProfileCloseBtn.addEventListener("click", function () {
   editProfileModal.classList.remove("modal_is-opened");
 });
-
-newPostBtn.addEventListener("click", function () {
-  newPostModal.classList.add("modal_is-opened");
-});
-
 newPostCloseBtn.addEventListener("click", function () {
   newPostModal.classList.remove("modal_is-opened");
 });
@@ -42,3 +41,20 @@ function handleEditProfileSubmit(evt) {
 }
 
 editProfileForm.addEventListener("submit", handleEditProfileSubmit);
+
+const newPostForm = newPostModal.querySelector(".modal__form");
+const newPostLinkInput = newPostModal.querySelector("#card-link-input");
+const newPostDescriptionInput = newPostModal.querySelector(
+  "#new-post-description-input",
+);
+
+function handleNewPostSubmit(event) {
+  event.preventDefault();
+
+  console.log("Image Link:", newPostLinkInput.value);
+  console.log("Description:", newPostDescriptionInput.value);
+
+  newPostModal.classList.remove("modal_is-opened");
+}
+
+newPostForm.addEventListener("submit", handleNewPostSubmit);

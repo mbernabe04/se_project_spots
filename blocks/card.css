@@ -22,7 +22,7 @@
   border: none;
   background-color: transparent;
   opacity: 0.5;
-  transition: opacity 0.3 linear;
+  transition: opacity 0.3s linear;
   cursor: pointer;
 }
 
@@ -32,11 +32,10 @@
 }
 
 .card__title {
-  font-weight: normal;
   margin: 0;
   font-weight: 500;
   font-size: 20px;
-  line-height: 140%; /*originally was 120%, text was cut off on the bottom with 120%*/
+  line-height: 120%; /*was 140 before 120%, text was cut off on the bottom with 120%*/
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;

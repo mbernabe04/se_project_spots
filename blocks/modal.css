@@ -10,9 +10,13 @@
   justify-content: center;
   align-items: center;
   padding: 10px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease visibility 0.3s ease;
 }
 
 .modal_is-opened {
+  opacity: 1;
   visibility: visible;
 }
 
@@ -23,6 +27,7 @@
   background-color: #fff;
   padding: 32px 50px;
   position: relative;
+  box-sizing: border-box;
 }
 
 .modal__close-btn {
@@ -33,9 +38,9 @@
   height: 40px;
   background-image: url(../images/closeicon.png);
   background-color: rgba(255, 255, 255, 1);
-  border: rgba(255, 255, 255, 1);
+  border: none;
   opacity: 0.5;
-  transition: linear;
+  transition: opacity 0.3s linear;
   cursor: pointer;
 }
 
@@ -45,12 +50,12 @@
 
 .modal__title {
   margin: 0 0 32px;
-  font-family: Poppins;
+  font-family: "Poppins", Arial, sans-serif;
   font-weight: 500;
-  font-style: Medium;
+  font-style: normal;
   font-size: 32px;
   line-height: 100%;
-  letter-spacing: 0%;
+  letter-spacing: 0;
 }
 
 .modal__form {
@@ -61,43 +66,51 @@
 .modal__submit-btn {
   font-family: Poppins;
   font-weight: 500;
-  font-style: Medium;
+  font-style: normal;
   font-size: 16px;
   line-height: 100%;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   width: 156px;
   border-radius: 8px;
   height: 52px;
   background-color: rgba(33, 33, 33, 1);
   color: rgba(252, 245, 229, 1);
+  cursor: pointer;
+  transition: opacity 0.3s linear;
+  opacity: 70%;
+}
+
+.modal__submit-btn:hover {
+  opacity: 100%;
 }
 
 .modal__label {
   margin: 0 0 32px;
   font-family: Poppins;
   font-weight: 500;
-  font-style: Medium;
+  font-style: normal;
   font-size: 16px;
   line-height: 110.00000000000001%;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   color: #212121b2;
 }
 
 .modal__input {
   display: block;
   margin: 8px 0 0;
-  width: 96%;
+  width: 100%;
   padding: 16px 12px;
   font-family: Poppins;
   font-weight: 500;
-  font-style: Medium;
+  font-style: normal;
   font-size: 20px;
   line-height: 100%;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   border-radius: 8px;
   opacity: 0.5;
-  transition: linear;
+  transition: border-color 0.3s linear;
   cursor: pointer;
+  box-sizing: border-box;
 }
 
 .modal__input:hover {
@@ -120,5 +133,11 @@
 
   .modal__input {
     width: 90%;
+  }
+
+  .modal__close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
   }
 }
