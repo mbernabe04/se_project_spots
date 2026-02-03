@@ -12,7 +12,9 @@
   padding: 10px;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.3s ease visibility 0.3s ease;
+  transition:
+    visibility 0.3s,
+    opacity 0.3s ease-in;
 }
 
 .modal_is-opened {
@@ -122,6 +124,10 @@
 }
 
 @media screen and (max-width: 627px) {
+  .modal__container {
+    padding: 22px 12px 12px;
+  }
+
   .modal__title {
     font-size: 20px;
     margin: 0 0 24px;
@@ -132,12 +138,11 @@
   }
 
   .modal__input {
-    width: 90%;
+    font-size: 16px;
   }
 
   .modal__close-btn {
-    position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 12px;
+    right: 12px;
   }
 }
