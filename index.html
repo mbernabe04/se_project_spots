@@ -26,11 +26,20 @@
             <h1 class="profile__name">Bessie Coleman</h1>
             <p class="profile__description">Civil Aviator</p>
             <button type="button" class="profile__edit-btn">
-              <img src="./images/pencil.svg" alt="Pencil icon" />Edit Profile
+              <img
+                class="profile__edit-btn-icon"
+                src="./images/pencil.svg"
+                alt="Pencil icon"
+              />Edit Profile
             </button>
           </div>
           <button type="button" class="profile__add-btn">
-            <img src="./images/newposticon.svg" alt="Plus icon" /> New Post
+            <img
+              class="profile__add-btn-icon"
+              src="./images/newposticon.svg"
+              alt="Plus icon"
+            />
+            New Post
           </button>
         </section>
         <section class="cards page__section">
@@ -84,7 +93,7 @@
           <button type="button" class="modal__close"></button>
           <h2 class="modal__title">New Post</h2>
           <form class="modal__form">
-            <label for="card-caption-input" class="modal__label">
+            <label for="card-link-input" class="modal__label">
               Image link
               <input
                 id="card-link-input"

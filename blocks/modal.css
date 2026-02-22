@@ -11,7 +11,6 @@
   align-items: center;
   padding: 10px;
   opacity: 0;
-  visibility: hidden;
   transition:
     visibility 0.3s,
     opacity 0.3s ease-in;
@@ -45,27 +44,28 @@
   background-image: url(../images/closeicon.png);
   background-color: rgba(255, 255, 255, 1);
   border: none;
-  opacity: 0.5;
+  opacity: 40%;
   transition: opacity 0.3s linear;
   cursor: pointer;
+}
+
+.modal__close:hover {
+  opacity: 100%;
 }
 
 .modal__close_type_preview {
   color: #fff;
   background-color: transparent;
+  background-image: url(../images/closeicon-light.svg);
   top: 0px;
   right: -52.5px;
   cursor: pointer;
-  opacity: 0.5;
+  opacity: 1;
   transition: opacity 0.3s linear;
 }
 
 .modal__close_type_preview:hover {
-  opacity: 1;
-}
-
-.modal__close:hover {
-  opacity: 1;
+  opacity: 40%;
 }
 
 .modal__title {
@@ -94,6 +94,7 @@
   border-radius: 8px;
   border: none;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .modal__submit-btn:hover {

@@ -99,7 +99,7 @@
   outline-offset: 2px;
 }
 
-.profile__add-btn img {
+.profile__add-btn-icon {
   width: 12px;
   height: 12px;
 }
@@ -148,7 +148,8 @@
     margin: 0 auto;
   }
 
-  .profile__edit-btn img {
-    align-items: center;
+  .profile__edit-btn-icon {
+    width: 10px;
+    height: 10px;
   }
 }
