@@ -41,7 +41,7 @@
   right: 50px;
   width: 40px;
   height: 40px;
-  background-image: url(../images/closeicon.png);
+  background-image: url(../images/closeicon.svg);
   background-color: rgba(255, 255, 255, 1);
   border: none;
   opacity: 40%;
@@ -98,7 +98,7 @@
 }
 
 .modal__submit-btn:hover {
-  opacity: 100%;
+  opacity: 80%;
 }
 
 .modal__label {
@@ -124,7 +124,7 @@
 }
 
 .modal__input:hover {
-  opacity: 100%;
+  border-color: #212121;
 }
 
 .modal__input::placeholder {
@@ -156,6 +156,22 @@
   padding: 4px 8px 4px 8px;
   max-width: fit-content;
   margin-top: 8px;
+  margin: 0;
+}
+
+@media screen and (max-width: 627px) {
+  .modal__close_type_preview {
+    top: -48px;
+    right: 0;
+  }
+
+  .modal__image {
+    max-width: unset;
+  }
+
+  .modal__caption {
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -179,17 +195,5 @@
   .modal__close {
     top: 12px;
     right: 12px;
-  }
-}
-
-@media screen and (max-width: 627px) {
-  /* Placed before the 1st 480px media queires^ to avoid being overwritten*/
-  .modal__close_type_preview {
-    top: -48px;
-    right: 0;
-  }
-
-  .modal__image {
-    max-width: unset;
   }
 }
