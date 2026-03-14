@@ -32,8 +32,8 @@ const initialCards = [
 
 const editProfileBtn = document.querySelector(".profile__edit-btn");
 const editProfileModal = document.querySelector("#edit-profile-modal");
-const editProfileCloseBtn = editProfileModal.querySelector(".modal__close");
 const editProfileForm = editProfileModal.querySelector(".modal__form");
+const editProfileCloseBtn = editProfileModal.querySelector(".modal__close");
 const editProfileNameInput = editProfileModal.querySelector(
   "#profile-name-input",
 );
@@ -134,16 +134,14 @@ const newPostDescriptionInput = newPostModal.querySelector(
 
 function handleNewPostSubmit(event) {
   event.preventDefault();
-
   const inputValues = {
     name: newPostDescriptionInput.value,
     link: newPostLinkInput.value,
   };
-
   const cardElement = getCardElement(inputValues);
   cardsList.prepend(cardElement);
-
   newPostForm.reset();
+  disableButton();
   closeModal(newPostModal);
 }
 
