@@ -24,7 +24,10 @@ Spots Project from TripleTen's Sprint 3 where I built a social media web app tha
 
 - [Link to the Figma Design](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
 
-## Project Pitch Video
+# Project Pitch Videos
 
-Check out [this video](https://drive.google.com/file/d/17yAjNmAkgkF9ywDKEfsqEmMb-9nLNCWH/view?usp=sharing), where I briefly describe my
-project and the process of building it!
+Check out these videos, where I describe my project
+and some challenges I faced while building it:
+
+- [Project Pitch 1](https://drive.google.com/file/d/17yAjNmAkgkF9ywDKEfsqEmMb-9nLNCWH/view?usp=sharing)
+- [Project Pitch 2](https://drive.google.com/file/d/1gmoZI-evcqPpO9XYLvuoZc-6XaHg5Pw1/view?usp=share_link)
