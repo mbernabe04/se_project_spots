@@ -169,7 +169,7 @@ function handleNewPostSubmit(event) {
   const cardElement = getCardElement(inputValues);
   cardsList.prepend(cardElement);
   newPostForm.reset();
-  disableButton(submitButton);
+  disableButton(newPostForm.querySelector(".modal__submit-btn"));
   closeModal(newPostModal);
 }
 
