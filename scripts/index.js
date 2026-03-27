@@ -1,3 +1,5 @@
+// card grid \\
+
 const initialCards = [
   {
     name: "Golden Gate Bridge",
@@ -30,6 +32,8 @@ const initialCards = [
   },
 ];
 
+// modal functionality \\
+
 const editProfileBtn = document.querySelector(".profile__edit-btn");
 const editProfileModal = document.querySelector("#edit-profile-modal");
 const editProfileForm = editProfileModal.querySelector(".modal__form");
@@ -45,6 +49,8 @@ const previewModal = document.querySelector("#preview-modal");
 const previewModalCloseBtn = previewModal.querySelector(".modal__close");
 const previewImageEl = previewModal.querySelector(".modal__image");
 const previewModalCaptionEl = previewModal.querySelector(".modal__caption");
+
+// card events \\
 
 const cardTemplate = document
   .querySelector("#card-template")
@@ -80,17 +86,37 @@ function getCardElement(data) {
   return cardElement;
 }
 
+// modal open/close, esc key, click overlay \\
+
 previewModalCloseBtn.addEventListener("click", () => {
   closeModal(previewModal);
 });
 
+function handleEscapeKey(evt) {
+  if (evt.key === "Escape") {
+    closeModal(document.querySelector(".modal_is-opened"));
+  }
+}
+
 function openModal(modal) {
   modal.classList.add("modal_is-opened");
+  modal.addEventListener("click", handleOverlayClick);
+  document.addEventListener("keydown", handleEscapeKey);
 }
 
 function closeModal(modal) {
   modal.classList.remove("modal_is-opened");
+  modal.removeEventListener("click", handleOverlayClick);
+  document.removeEventListener("keydown", handleEscapeKey);
 }
+
+function handleOverlayClick(evt) {
+  if (evt.target === evt.currentTarget) {
+    closeModal(evt.currentTarget);
+  }
+}
+
+// modal buttons \\
 
 const newPostBtn = document.querySelector(".profile__add-btn");
 const newPostModal = document.querySelector("#new-post-modal");
@@ -117,6 +143,8 @@ newPostCloseBtn.addEventListener("click", function () {
   closeModal(newPostModal);
 });
 
+// adding/removing new posts & editing profile \\
+
 function handleEditProfileSubmit(evt) {
   evt.preventDefault();
   profileNameEl.textContent = editProfileNameInput.value;
@@ -141,7 +169,7 @@ function handleNewPostSubmit(event) {
   const cardElement = getCardElement(inputValues);
   cardsList.prepend(cardElement);
   newPostForm.reset();
-  disableButton();
+  disableButton(submitButton);
   closeModal(newPostModal);
 }
 
